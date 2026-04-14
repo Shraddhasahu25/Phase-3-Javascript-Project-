@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="result">
+     <h1>Quiz Finished </h1>
+
+    <h2 id="finalScore"></h2>
+
+    <p>
+Thank you for participationg in the quiz! 
+We hope you enjoyed it and learned something new. 
+</p> 
+
+    <a href="index.html">
+        <button> Again start quiz </button>
+    </a>
+
+    </div> 
+    
+    <script> 
+
+
+let correct = localStorage.getItem("correct");
+let wrong = localStorage.getItem("wrong");
+
+document.getElementById("finalScore").innerText =
+"Correct Answer: " + correct + " | Wrong Answer: " + wrong; 
+
+</script>
+
+</body>
+</html>
